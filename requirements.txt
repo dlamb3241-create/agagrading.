@@ -1,9 +1,7 @@
-flask
+Flask
 gunicorn
-flask-cors
-flask-sqlalchemy
-pillow
 torch
 torchvision
+Pillow
 numpy
 

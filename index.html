@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+<title>Authentic Grading Authority</title>
+
+</head>
+<body>
+  <div class="top-banner">
+    First Submission? Grade 5 Cards for $50 + Free Collector’s Box —
+    <a href="{{ url_for('submit_page') }}">Start Submission</a>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">authentic grading authority</div>
+    <div>
+      <a href="{{ url_for('order_status_page') }}">Order Status</a>
+      <a href="{{ url_for('lookup_page') }}">Certification Lookup</a>
+      <a href="{{ url_for('pricing') }}">Pricing & Turnaround</a>
+      <a href="{{ url_for('submit_page') }}">How To Submit</a>
+      <a href="{{ url_for('specials_page') }}">Monthly Specials</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <img src="{{ url_for('static', filename='assets/cards/card1.jpg') }}" alt="Card 1" class="visible"/>
+    <img src="{{ url_for('static', filename='assets/cards/card2.jpg') }}" alt="Card 2"/>
+    <img src="{{ url_for('static', filename='assets/cards/card3.jpg') }}" alt="Card 3"/>
+    <img src="{{ url_for('static', filename='assets/cards/card4.jpg') }}" alt="Card 4"/>
+    <img src="{{ url_for('static', filename='assets/cards/card5.jpg') }}" alt="Card 5"/>
+    <img src="{{ url_for('static', filename='assets/cards/card6.jpg') }}" alt="Card 6"/>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="headline-gradient">Welcome to Authentic Grading Authority.</h1>
+      <p class="sub">Protecting trading cards for the everyday collector.</p>
+      <div class="cta">
+        <a class="btn" href="{{ url_for('submit_page') }}">Start Submission</a>
+        <a class="btn btn-outline" href="{{ url_for('pricing') }}">Pricing & Turnaround</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Authentic Grading Authority — All Rights Reserved</footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

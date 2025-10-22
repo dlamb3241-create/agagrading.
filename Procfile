@@ -1,1 +1,1 @@
-web: gunicorn aga-fullstack.app:app
+web: gunicorn app:app

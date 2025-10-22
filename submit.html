@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+<title>Authentic Grading Authority</title>
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">authentic grading authority</div>
+    <div>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('order_status_page') }}">Order Status</a>
+      <a href="{{ url_for('lookup_page') }}">Certification Lookup</a>
+      <a href="{{ url_for('pricing') }}">Pricing</a>
+      <a href="{{ url_for('submit_page') }}">How To Submit</a>
+      <a href="{{ url_for('specials_page') }}">Monthly Specials</a>
+    </div>
+  </div>
+  <section class="content">
+    <h1>How To Submit Your Cards</h1>
+    
+<ol>
+  <li>Fill out the submission form (payment integration coming soon).</li>
+  <li>Package your cards securely with sleeves and top loaders.</li>
+  <li>Ship to our grading center (address to be confirmed).</li>
+</ol>
+
+  </section>
+  <footer class="footer">© <span id="year"></span> Authentic Grading Authority</footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
